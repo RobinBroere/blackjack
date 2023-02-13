@@ -1,3 +1,3 @@
 # blackjack
 making a type based blackjack game in python to get comfortable with the language
-current state = Not finished
+# current state = Not finished

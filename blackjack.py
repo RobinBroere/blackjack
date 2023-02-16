@@ -47,6 +47,7 @@ def play():
     print("Dealer cards: ",dealerUp[0],"??\nPlayer cards: ",player1[0],";",player2[0])
     if playerVal == 21 and playerVal > dealerVal:
         print("Blackjack!")
+        contin()
     else:
         ask1 = input("What do you want to do? H,S?")
     if ask1 == "H" or ask1 == "h":
@@ -65,6 +66,8 @@ def play():
                 if newPlayerVal2 > 21:
                     print("bust")
                     contin()
+            else:
+                print("Dealer cards: ", dealerUp[0], dealerDown,"\nPlayer cards: ", player1[0], ";", player2[0], ";", player3[0], ";", player4[0])
     else:
         print("Dealer cards: ", dealerUp[0],";", dealerDown[0],"\nPlayer cards: ", player1[0], ";", player2[0])
         if dealerVal == 21 and playerVal < 21:
@@ -86,6 +89,10 @@ def play():
         else:
             if dealerVal > playerVal:
                 print("Dealer wins")
+                contin()
+            else:
+                print("Draw")
+                contin()
 
 def contin():
     ask = input("play again?")
